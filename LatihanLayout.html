@@ -30,6 +30,24 @@
         .form-control {
             margin-bottom: 10px;
         }
+        .input-group-custom {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .input-group-custom .form-control {
+            padding-left: 45px; /* biar ada space buat icon */
+        }
+
+        .form-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            opacity: 0.5;
+        }
         .error-text {
             color: red;
             font-size: 0.9em;
@@ -66,9 +84,18 @@
     <body>
 
         <div class="login-container">
-            <img src="Logo CekDong 1.png" alt="Cek Dong Logo" class="logo">
-            <input type="text" class="form-control" placeholder="Username">
-            <input type="password" class="form-control" placeholder="Password">
+            <img src="foto/Logo CekDong 1.png" alt="Cek Dong Logo" class="logo">
+
+            <div class="input-group-custom">
+                <img src="foto/username.jpeg" alt="User Icon" class="form-icon">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            
+            <div class="input-group-custom">
+                <img src="foto/password.jpeg" alt="Password Icon" class="form-icon">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            
             <p class="error-text">Wrong Password!</p>
             <button class="btn">Login</button>
             <p><a href="#" style="color: black;">Forgot Password</a></p>
